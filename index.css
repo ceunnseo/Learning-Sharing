@@ -1,0 +1,21 @@
+body {
+    margin : 0px;
+}
+.header {
+    display : flex;
+    background-color : powderblue;
+    justify-content : space-between;
+    align-items : center;
+    flex-wrap : wrap;
+    color : #474144;
+    font-size : 16px;
+    line-height : normal;
+    padding-left: 50%;
+    padding-right : 30px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+/* #cannotsee {
+    background-color: red;
+    width : 50%;
+} */
