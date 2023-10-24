@@ -8,18 +8,29 @@
 </head>
 <body>
     <div class = "header">
-        <div class = "menu">About</div>
-        <div class = "menu">Keywords</div>
-        <div class = "menu">Skills</div>
-        <div class = "menu">Project</div>
-        <div class = "menu">Contact</div>
+        <div class = "home">
+            <div onclick = "location.href = '#home';">Choi Eunseo</div>
+        </div>
+        <div class = "menu">
+            <div onclick = "location.href = '#about';">About</div>
+            <div onclick = "location.href = '#keywords';">Keywords</div>
+            <div onclick = "location.href = '#skills';">Skills</div>
+            <div onclick = "location.href = '#project';">Project</div>
+            <div onclick = "location.href = '#contact';">Contact</div>
+        </div>
+
     </div>
-    <div id = "home">home</div>
-    <div id = "about">about</div>
-    <div id = "keywords">keywords</div>
-    <div id = "skills">skills</div>
-    <div id = "project">project</div>
-    <div id = "contact">contact</div>
+    <div class = "section" id = "home">
+        <div id = "introImage"></div>
+        <div id = "helloMessage"></div>
+        <button type = "button">project</button>
+        <button type = "button">contact</button>
+    </div>
+    <div class = "section" id = "about">about</div>
+    <div class = "section" id = "keywords">keywords</div>
+    <div class = "section" id = "skills">skills</div>
+    <div class = "section" id = "project">project</div>
+    <div class = "section" id = "contact">contact</div>
 
 </body>
 </html>

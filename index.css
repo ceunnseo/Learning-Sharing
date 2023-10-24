@@ -1,7 +1,13 @@
+@font-face {
+    font-family : 'nanumSquareRoundB';
+    src : url("./font/NanumSquareRoundB.woff") format("woff");
+}
 body {
     margin : 0px;
 }
 .header {
+    cursor:pointer;
+    font-family : 'nanumSquareRoundB';
     display : flex;
     background-color : powderblue;
     justify-content : space-between;
@@ -10,12 +16,53 @@ body {
     color : #474144;
     font-size : 16px;
     line-height : normal;
+    /*
     padding-left: 50%;
     padding-right : 30px;
     padding-top : 5px;
-    padding-bottom : 5px;
+    padding-bottom : 5px;*/
+    height : 51px;
+    position : fixed;
+    top : 0;
+    left : 0;
+    right : 0;
 }
-/* #cannotsee {
+.menu {
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    flex-wrap : wrap;
+    padding-right : 30px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    gap : 50px;
+}
+.home {
+    padding-left : 30px;
+    padding-bottom : 5px;
+    padding-top : 5px;
+}
+
+.section {
+    height : 100vh;
+}
+
+
+#home {
     background-color: red;
-    width : 50%;
-} */
+}
+#about {
+    background-color: orange;
+}
+#keywords {
+    background-color: yellow;
+}
+#skills {
+    background-color : green;
+}
+#project {
+    background-color: blue;
+}
+#contact {
+    background-color: purple;
+}
