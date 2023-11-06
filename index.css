@@ -5,11 +5,24 @@
 body {
     margin : 0px;
 }
+.helloMessage {
+    font-family : 'nanumSquareRoundB';
+    font-size: 24px;
+    width: 281px;
+    height: 56px;
+    text-align: center;
+    margin : 0px;
+    padding-bottom :41px;
+}
+p {
+    margin : 0px; 
+}
+
 .header {
     cursor:pointer;
     font-family : 'nanumSquareRoundB';
     display : flex;
-    background-color : powderblue;
+    background-color : white;
     justify-content : space-between;
     align-items : center;
     flex-wrap : wrap;
@@ -44,25 +57,84 @@ body {
 }
 
 .section {
-    height : 100vh;
+    padding-top : 51px;
+    height : calc(100vh - 51px);
+    background-color: #ECE9E7;
 }
-
-
 #home {
-    background-color: red;
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
 }
 #about {
-    background-color: orange;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
 }
-#keywords {
-    background-color: yellow;
+
+
+.btn.orange {
+    background-color: #DE712E;
 }
-#skills {
-    background-color : green;
+.btn.blue {
+    background-color: #88AFBA;;
 }
-#project {
-    background-color: blue;
+.btn {
+    margin : 9px;
+    text-decoration: none;
 }
-#contact {
-    background-color: purple;
+.btn {
+    color: white; 
+    padding: 15px 25px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.21);
+    border-bottom-color: rgba(0,0,0,0.34);
+    text-shadow:0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+                0 2px 0 -1px rgba(0,0,0,0.13), 
+                0 3px 0 -1px rgba(0,0,0,0.08), 
+                0 3px 13px -1px rgba(0,0,0,0.21);
+}
+.btn:active {
+    top: 1px;
+    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    position: relative;
+}
+.rounded {
+    border-radius: 20px;
+}
+span.highlight {
+    color : #3CA62B;
+}
+
+#introImage {
+    width : 229px;
+    height : 229px;
+    overflow : hidden; /*넘치는 부분은 잘려 보이지 x*/
+    margin : 0 ;
+}
+
+li {
+    list-style: none;
+    margin : 20px 0px;
+}
+
+
+#aboutImage {
+    width : 177px;
+    height : 221px;
+    overflow : hidden; /*넘치는 부분은 잘려 보이지 x*/
+    margin : 0 ;
+}
+.info {
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+}
+#aboutMe {
+    padding-bottom : 54px;
+    font-family : 'nanumSquareRoundB';
+    font-size : 32px;
 }
