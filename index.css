@@ -131,7 +131,7 @@ li {
 
 #aboutImage {
     width : 177px;
-    height : 221px;
+    /*height : 221px;*/
     overflow : hidden; /*넘치는 부분은 잘려 보이지 x*/
     border-left : 71px;
 }
@@ -149,17 +149,72 @@ h3 {
     font-size : 30px;
 }
 
+.modal_body h2 {
+    color: red;
+    font-size : 30px;
+    margin : 10px;
+}
+.modal_body hr {
+    margin-top : 20px;
+    margin-bottom : 20px;
+    border : 0;
+    border-top : 1px solid #374144;
+}
+.modal_body h3 {
+    margin-top : 0px;
+    margin-bottom : 5px;
+    color: blue;
+    font-size : 25px;
+}
+.modal_body p {
+    color: green;
+    font-size : 18px;
+}
 #aboutMe {
     padding-bottom : 54px;
 }
+/*사진이랑 설명 들어있는 영역*/
+.modal_content { 
+    display : flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+}
+/*설명만 들어있는 영역*/
+.modal_info {
+    display : flex;
+    flex-direction : column;
+}
+.modal_info .btn {
+    margin : 0px;
+    padding: 5px 15px;
+    font-size : 14px;
+    text-decoration: none;
+    color: white; 
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.21);
+    text-shadow:0 1px 0 rgba(0,0,0,0.15);
+}
 
 
+
+
+
+
+
+
+#modalImage {
+    width : 20vw;
+    height : 30vh;
+}
+
+/*모달창 검정 배경*/
 .modal {
-    position:absolute;
+    position:fixed;
+
     display:None;
     
     justify-content: center;
-    top:0;
+    top:0px;
     left:30;
 
     width:100%;
@@ -167,20 +222,23 @@ h3 {
 
     background-color: rgba(0,0,0,0.4);
 }
-
+/*모달창 객체*/
 .modal_body{
     position:absolute;
     top:50%;
-
+    /*
     width:400px;  
     height:600px; 
+    */
+    width:55vw;
+    height:55vh;
 
-    padding:40px;  
+    padding:20px;  
 
     text-align: center;
 
     background-color: rgb(255,255,255); 
-    border-radius:10px; 
+    border-radius: 31px;
     box-shadow:0 2px 3px 0 rgba(34,36,38,0.15); 
 
     transform:translateY(-50%);  
