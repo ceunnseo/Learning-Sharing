@@ -62,6 +62,7 @@ p {
 }
 
 .section {
+    /*display : flex;*/
     padding-top : 51px;
     height : calc(100vh - 51px);
     background-color: #ECE9E7;
@@ -143,10 +144,36 @@ li {
 h2 {
     font-family : 'nanumSquareRoundB';
     font-size : 32px;
+    text-align : center;
 }
 h3 {
     font-family : 'nanumSquare';
     font-size : 30px;
+    display : inline;
+}
+.words {
+    position : relative;
+}
+#personality {
+    top : 130px;
+    left : 84px;
+}
+#education {
+    top : 197px;
+    left : 273px;
+}
+#study {
+    top : 264px;
+    left : 134px;
+}
+#motivation {
+    top : 303px;
+    left : 406px;
+
+}
+#likes {
+    top : 137px;
+    left : 469px;
 }
 
 .modal_body h2 {
