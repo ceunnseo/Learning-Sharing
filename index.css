@@ -153,6 +153,7 @@ h3 {
 }
 .words {
     position : relative;
+    z-index : 0;
 }
 #personality {
     top : 130px;
@@ -236,6 +237,7 @@ h3 {
 
 /*모달창 검정 배경*/
 .modal {
+    z-index :1;
     position:fixed;
 
     display:None;
