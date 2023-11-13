@@ -72,12 +72,13 @@ p {
     flex-direction : row;
     justify-content: center;
 }
+/*
 #about {
     display : flex;
     flex-direction : column;
     justify-content : center;
     align-items : center;
-}
+}*/
 
 
 .btn.orange {
@@ -143,8 +144,10 @@ li {
 }
 h2 {
     font-family : 'nanumSquareRoundB';
-    font-size : 32px;
+    font-size : 40px;
     text-align : center;
+    margin : 60px 0px;
+    padding-bottom : 0px;
 }
 h3 {
     font-family : 'nanumSquare';
@@ -155,26 +158,27 @@ h3 {
     position : relative;
     z-index : 0;
 }
+
 #personality {
-    top : 130px;
-    left : 84px;
+    top : 23%;
+    left : 45%;
 }
 #education {
-    top : 197px;
-    left : 273px;
+    top : 10%;
+    left : 10%;
 }
 #study {
-    top : 264px;
-    left : 134px;
+    top : 13%;
+    left : 55%;
 }
 #motivation {
-    top : 303px;
-    left : 406px;
+    top : 50%;
+    left : 23%;
 
 }
 #likes {
-    top : 137px;
-    left : 469px;
+    top : 40%;
+    left : -15%;
 }
 
 .modal_body h2 {
@@ -198,9 +202,7 @@ h3 {
     color: green;
     font-size : 18px;
 }
-#aboutMe {
-    padding-bottom : 54px;
-}
+
 /*사진이랑 설명 들어있는 영역*/
 .modal_content { 
     display : flex;
@@ -271,4 +273,67 @@ h3 {
     box-shadow:0 2px 3px 0 rgba(34,36,38,0.15); 
 
     transform:translateY(-50%);  
+}
+
+
+/****************project 페이지*******************/
+/*캐러셀*/
+.carousel img {
+    width : 370px;
+    height : 370px;
+    /*border-radius : 20px;*/
+}
+.carouselContainer {
+    margin-left : 100px;
+    margin-top : 60px;
+    width : 370px;
+    height : 450px;
+    overflow : hidden;
+}
+.carousel {
+    display : flex;
+    transition : all 0.5s;
+}
+.prevBtn {
+    margin-left : 250px;
+}
+.prevBtn,
+.nextBtn {
+    cursor : pointer;
+    margin-top : 20px;
+    padding : 5px;
+    border-radius : 5px;
+    border : 1px solid black;
+    display : inline-block;
+}
+
+
+/****************contact 페이지*******************/
+#contact {
+    display : flex;
+    flex-direction: column;
+}
+.circle {
+    width : 100px;
+    height : 100px;
+    border-radius : 50%;
+    background-color : tomato;
+    cursor : pointer;
+}
+#github {
+    background-color: #DE712E;
+}
+#notion {
+    background-color: #88AFBA;
+}
+#gmail {
+    background-color:#374144 ;
+}
+.contactChannel {
+    width : 50vw;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin : 0 auto;
+    padding : 55px 0px;
 }
