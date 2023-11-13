@@ -72,13 +72,7 @@ p {
     flex-direction : row;
     justify-content: center;
 }
-/*
-#about {
-    display : flex;
-    flex-direction : column;
-    justify-content : center;
-    align-items : center;
-}*/
+
 
 
 .btn.orange {
@@ -160,7 +154,7 @@ h3 {
 }
 
 #personality {
-    top : 23%;
+    top : 25%;
     left : 45%;
 }
 #education {
@@ -168,7 +162,7 @@ h3 {
     left : 10%;
 }
 #study {
-    top : 13%;
+    top : 17%;
     left : 55%;
 }
 #motivation {
@@ -276,7 +270,7 @@ h3 {
 }
 
 
-/****************project 페이지*******************/
+/**************** 3. project 페이지*******************/
 /*캐러셀*/
 .carousel img {
     width : 370px;
@@ -284,8 +278,8 @@ h3 {
     /*border-radius : 20px;*/
 }
 .carouselContainer {
-    margin-left : 100px;
-    margin-top : 60px;
+    /*margin-left : 100px;*/
+    /*margin-top : 60px;*/
     width : 370px;
     height : 450px;
     overflow : hidden;
@@ -295,20 +289,33 @@ h3 {
     transition : all 0.5s;
 }
 .prevBtn {
-    margin-left : 250px;
+    /*margin-left : 250px;*/
 }
 .prevBtn,
 .nextBtn {
     cursor : pointer;
-    margin-top : 20px;
+    /*margin-top : 20px;*/
     padding : 5px;
     border-radius : 5px;
     border : 1px solid black;
     display : inline-block;
 }
+.carouselBox {
+    margin-left : 33%;
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+}
+.visit img {
+    width : 30px;
+    height : 30px;
+}
+.carousel .info {
+    text-align : center;
+}
 
 
-/****************contact 페이지*******************/
+/**************** 4. contact 페이지*******************/
 #contact {
     display : flex;
     flex-direction: column;
