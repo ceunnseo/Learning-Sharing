@@ -173,6 +173,8 @@ h3 {
     z-index : 0;
 }
 
+/*모달창 상세 내용*/
+
 #personality {
     top : 25%;
     left : 45%;
@@ -196,24 +198,28 @@ h3 {
 }
 
 .modal_body h2 {
-    color: red;
+    /*color: red;*/
     font-size : 30px;
     margin : 10px;
+    font-family : 'nanumSquareRoundB';
 }
 .modal_body hr {
     margin-top : 20px;
     margin-bottom : 20px;
     border : 0;
     border-top : 1px solid #374144;
+    font-family : 'nanumSquare';
 }
 .modal_body h3 {
     margin-top : 0px;
     margin-bottom : 5px;
-    color: blue;
+    /*color: blue;*/
     font-size : 25px;
+    font-family : 'nanumSquareRoundB';
+    padding-bottom : 30px;
 }
 .modal_body p {
-    color: green;
+    /*color: green;*/
     font-size : 18px;
 }
 
