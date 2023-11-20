@@ -20,15 +20,19 @@
 
     </div>
     <div class = "section" id = "home">
-        <img id = "introImage" src = "image/intro.jpg">
-        <div class = "intro2">
-            <div class = "helloMessage">
-                <p> 계속해서 <span class = "highlight">성장</span>해나가는 사람</p>
-                <p> 🌱최은서🌱입니다</p>
-            </div>
-            <div class = "container">
-                <a href="#contact" class="btn orange rounded">Contact</a>
-                <a href="#project" class="btn blue rounded">Project</a>
+        <!--div class = "home_title" id = "homeMessage"></div-->
+        <h2 id = "homeMessage">console.log("hello, eunseo world!")</h2>
+        <div id = "homeContainer">
+            <img id = "introImage" src = "image/intro.jpg">
+            <div class = "intro2">
+                <div class = "helloMessage">
+                    <p> 계속해서 <span class = "highlight">성장</span>해나가는 사람</p>
+                    <p> 🌱최은서🌱입니다</p>
+                </div>
+                <div class = "container">
+                    <a href="#contact" class="btn orange rounded">Contact</a>
+                    <a href="#project" class="btn blue rounded">Project</a>
+                </div>
             </div>
         </div>
     </div>
@@ -52,28 +56,96 @@
     </div>
     <div class = "section" id = "keywords">
         <h2 id = "sect2Title">🌱Keywords🌱</h2>
-        <div class = "modal" id = "modal_edu">
+        <h3 class = "words" id = "personality">Personality</h3>
+        <div class = "modal" id = "modal_personality">
             <div class = "modal_body">
-                <h2 id = "title">모달창 제목</h2>
+                <h2 id = "title">Personality</h2>
                 <hr>
                 <div class = "modal_content">
                     <img id = "modalImage" src = "image/intro.jpg">
                     <div class = "modal_info">
-                        <h3 id = "subtitle">모달창 소제목</h3>
-                        <p>모달창 내용 </p>
-                        <div class = "container"> 
-                            <a class="btn orange rounded">이전</a>
-                            <a class="btn blue rounded">다음</a>
-                        </div>
+                        <h3 id = "subtitle">나의 성격은!</h3>
+                        <p>저는 적극적인 성격입니다. 그리고 일을 많이 벌리는 성격입니다 ㅎㅎ
+                            원래는 소극적인 사람이었는데 입시 준비를 오래 하고 학교 생활에서 이것저것 활동을 하다보니 적극적인 성격으로 변하게 되었습니다😊
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <h3 class = "words" id = "personality">Personality</h3>
         <h3 class = "words" id = "education">Education</h3>
+        <div class = "modal" id = "modal_education">
+            <div class = "modal_body">
+                <h2 id = "title">Education</h2>
+                <hr>
+                <div class = "modal_content">
+                    <img id = "modalImage" src = "image/intro.jpg">
+                    <div class = "modal_info">
+                        <h3 id = "subtitle">💛교육 활동을 좋아해요!💛</h3>
+                        <p> 
+                            저는 교육 활동을 좋아합니다.
+                            전적대학교에서는 기초수학 과목에서 2년동안 멘토링 활동의 멘토 역할을 하면서 학교 사람들과 네트워킹을 다졌습니다.
+                            또한 코딩학원에서 약 2년간 근무를 하면서 초중고등학생 대상 블록코딩, C언어, Python, 정보올림피아드 등을 가르쳤습니다.
+                            봉사활동으로는 2022년도 삼성 드림클래스 멘토 활동을 하면서 중학교 8명 친구들의 담임 역할을 하며 학생들과 진로, 대인관계, 성격 등의 상담을 하고
+                            아이들의 학습을 도와주었습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h3 class = "words" id = "study">Study</h3>
+        <div class = "modal" id = "modal_study">
+            <div class = "modal_body">
+                <h2 id = "title">Study</h2>
+                <hr>
+                <div class = "modal_content">
+                    <img id = "modalImage" src = "image/intro.jpg">
+                    <div class = "modal_info">
+                        <h3 id = "subtitle">🗣️지식 공유를 좋아해요!🗣️</h3>
+                        <p>
+                            여러 사람들과 함께 모여 공부하는 것을 좋아합니다. 여름에는 자료구조와 알고리즘을 여러 사람들과 학습했습니다.
+                            러닝앤쉐어링 활동을 학교 동기들과 공부하면서 프론트의 기초인 html, css, javascript를 학습했습니다.
+                            현재는 이노베이션 아카데미에서 주관하는 project-x에 참여하여 java를 학습하고 게시판을 만드는 프로젝트를 진행하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h3 class = "words" id = "motivation">Motivation</h3>
+        <div class = "modal" id = "modal_motivation">
+            <div class = "modal_body">
+                <h2 id = "title">Motivation</h2>
+                <hr>
+                <div class = "modal_content">
+                    <img id = "modalImage" src = "image/intro.jpg">
+                    <div class = "modal_info">
+                        <h3 id = "subtitle">🎇나에게 영감을 주는 것들은🎇</h3>
+                        <p>
+                            저는 본인 일에 최선을 다 하는 사람들에게 영감을 받습니다.
+                            그래서 수능과목의 사회탐구 영역의 1타 강사인 이지영 강사를 가장 존경하며 동기부여를 얻습니다.
+                            또한 세바시같은 삶을 바라보는 방법에 대해 소개해주는 강연이나 책 등에 많은 영감을 받습니다. 
+                            어떻게 살아야 하는지, 어떤 마음 가짐으로 살아야 하는지에 대해 알려주기 때문입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h3 class = "words" id = "likes">Likes</h3>
+        <div class = "modal" id = "modal_likes">
+            <div class = "modal_body">
+                <h2 id = "title">Likes</h2>
+                <hr>
+                <div class = "modal_content">
+                    <img id = "modalImage" src = "image/intro.jpg">
+                    <div class = "modal_info">
+                        <h3 id = "subtitle">❤️내가 좋아하는 것들은❤️</h3>
+                        <p>
+                            저는 운동을 하면서 스트레스를 풀어요! 그리고 향수를 좋아해서
+                            향수 시향하러 가는 것, 다른 사람들이 남긴 향수 후기를 읽는 것을 좋아합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class = "section" id = "project">
         <h2>🍊project🍊</h2>
@@ -165,14 +237,24 @@
     <div class = "section" id = "contact">
         <h2>🍀contact🍀</h2>
         <div class = "contactChannel">
-            <div class = "circle" id = "github" onclick="window.open('https://github.com/ceunnseo')">github</div>
-            <div class = "circle" id = "notion" onclick="window.open('https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4')">notion</div>
-            <div class = "circle" id = "gmail" onclick="mailto:window.open('eunseo4068@gmail.com')">gmail
-            <a href="mailto:eunseo4068@gmail.com">
-                <img src="image/email.svg" alt="">
-            </a>
+            <div class = "circle" id = "github" onclick="window.open('https://github.com/ceunnseo')">
+                <img width = 100px heigth = 100px src="C:\Users\82109\Desktop\eunseo-site\image\github.png" alt="git">
             </div>
+
+            <div class = "circle" id = "notion" onclick="window.open('https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4')">
+                <img width = 100px height = 100px src="C:\Users\82109\Desktop\eunseo-site\image\notion.png" alt="notion">
+            </div>
+
+            <div class = "circle" id = "gmail">
+                <img width = 100px heigt = 100px src="C:\Users\82109\Desktop\eunseo-site\image\emails.png" alt="img">
+                <!--a href="mailto:eunseo4068@gmail.com"></a-->
+            </div>
+
         </div>
+    </div>
+    <div class = "footer">
+        <img width = 100px src="C:\Users\82109\Desktop\eunseo-site\image\kuLogo.png" alt="ku">
+        <span>건국대학교 Learning-Sharing [일취월장] 최은서</span>
     </div>
     <script src = "app.js"></script>
 </body>

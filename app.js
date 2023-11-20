@@ -1,23 +1,105 @@
+  /* 홈 : 글자 하나씩 */
+  /*
+  const homeText = document.querySelector('.home_title');
+  const content = 'console.log("hello, eunseo-world!")';
+  let count = 0;
+  function typing() {
+    homeText.innerText += content[count++];
+    if (count > content.length) {
+      homeText.innerText = '';
+      count = 0;
+      
+    }
+  }
+  setInterval(typing, 100);*/
+  
+  
   /*모달창*/
-  const modal = document.querySelector('.modal');
-  const btnOpenModal=document.querySelector('.btn-open-modal');
-
-  const keywordList = document.querySelectorAll('.words');
-
-  keywordList.forEach(function(item) {
-    item.addEventListener('click', function() {
-      console.log("hihi");
-      modal.style.display = "flex";
-    });
+  const modal1 = document.querySelector('#modal_personality');
+  const keyword1 = document.querySelector('#personality');
+  keyword1.addEventListener("click", (e) => {
+    console.log("hihi");
+    modal1.style.display = "flex";
   });
 
-  modal.addEventListener("click", (e)=> {
+  modal1.addEventListener("click", (e)=> {
     console.log(e.target.className);
     
     if (e.target.className == 'modal') {
-      modal.style.display = "none";
+      modal1.style.display = "none";
     }
   });
+
+
+
+  const modal2 = document.querySelector('#modal_education');
+
+  const keyword2 = document.querySelector('#education');
+  keyword2.addEventListener("click", (e) => {
+    console.log("hihi");
+    modal2.style.display = "flex";
+  });
+
+  modal2.addEventListener("click", (e)=> {
+    console.log(e.target.className);
+    
+    if (e.target.className == 'modal') {
+      modal2.style.display = "none";
+    }
+  });
+
+  const modal3 = document.querySelector('#modal_study');
+
+  const keyword3 = document.querySelector('#study');
+  keyword3.addEventListener("click", (e) => {
+    console.log("hihi");
+    modal3.style.display = "flex";
+  });
+
+  modal3.addEventListener("click", (e)=> {
+    console.log(e.target.className);
+    
+    if (e.target.className == 'modal') {
+      modal3.style.display = "none";
+    }
+  });
+
+
+  const modal4 = document.querySelector('#modal_motivation');
+
+  const keyword4 = document.querySelector('#motivation');
+  keyword4.addEventListener("click", (e) => {
+    console.log("hihi");
+    modal4.style.display = "flex";
+  });
+
+  modal4.addEventListener("click", (e)=> {
+    console.log(e.target.className);
+    
+    if (e.target.className == 'modal') {
+      modal4.style.display = "none";
+    }
+  });
+
+
+  const modal5 = document.querySelector('#modal_likes');
+
+  const keyword5 = document.querySelector('#likes');
+  keyword5.addEventListener("click", (e) => {
+    console.log("hihi");
+    modal5.style.display = "flex";
+  });
+
+  modal5.addEventListener("click", (e)=> {
+    console.log(e.target.className);
+    
+    if (e.target.className == 'modal') {
+      modal5.style.display = "none";
+    }
+  });
+
+
+
 
   
 

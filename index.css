@@ -6,10 +6,21 @@
     font-family : 'nanumSquare';
     src : url("./font/NanumSquareR.woff") format("woff");
 }
+@font-face {
+    font-family : 'developerFont';
+    src : url("./font/consola.woff") format("woff");
+}
 
 body {
     margin : 0px;
 }
+/*homeMessage : console.log("welcome")*/
+#homeMessage {
+    font-size: 25px;
+    font-family : 'developerFont';
+    color : #474144;
+}
+/*helloMessage : 계속해서 성장~~ 입니다.*/
 .helloMessage {
     font-family : 'nanumSquareRoundB';
     font-size: 24px;
@@ -35,12 +46,7 @@ p {
     font-size : 16px;
     line-height : normal;
     z-index : 100;
-    /*
-    padding-left: 50%;
-    padding-right : 30px;
-    padding-top : 5px;
-    padding-bottom : 5px;*/
-    height : 51px;
+    height : 70px;
     position : fixed;
     top : 0;
     left : 0;
@@ -51,27 +57,34 @@ p {
     justify-content : space-around;
     align-items : center;
     flex-wrap : wrap;
-    padding-right : 30px;
+    padding-right : 12%;
     padding-top : 5px;
     padding-bottom : 5px;
     gap : 50px;
 }
 .home {
-    padding-left : 30px;
+    padding-left : 12%;
     padding-bottom : 5px;
     padding-top : 5px;
 }
 
 .section {
     /*display : flex;*/
-    padding-top : 51px;
-    height : calc(100vh - 51px);
+    padding-top : 70px;
+    height : calc(100vh - 70px);
     background-color: #ECE9E7;
 }
 #home {
     display : flex;
-    flex-direction : row;
+    flex-direction : column;
+    align-items: center;
+}
+#homeContainer {
+    display : flex;
+    flex-direction: row;
+    align-items : center;
     justify-content: center;
+    padding-top : 2%;
 }
 
 
@@ -116,7 +129,11 @@ span.highlight {
     height : 229px;
     overflow : hidden; /*넘치는 부분은 잘려 보이지 x*/
     margin : 0 ;
+    margin-right : 60px;
 }
+
+/*section2 About 페이지*/
+
 ul {
     margin : 0px;
 }
@@ -136,7 +153,9 @@ li {
     display : flex;
     flex-direction : row;
     justify-content : center;
+    padding-top : 2%;
 }
+
 h2 {
     font-family : 'nanumSquareRoundB';
     font-size : 40px;
@@ -334,13 +353,13 @@ h3 {
     cursor : pointer;
 }
 #github {
-    background-color: #DE712E;
+    background-color: white;
 }
 #notion {
     background-color: #88AFBA;
 }
 #gmail {
-    background-color:#374144 ;
+    background-color:white ;
 }
 .contactChannel {
     width : 50vw;
@@ -349,4 +368,21 @@ h3 {
     justify-content: space-between;
     margin : 0 auto;
     padding : 55px 0px;
+}
+
+#contact {
+    /*display : flex;*/
+    padding-top : 51px;
+    height : calc(100vh - 70px - 70px);
+    background-color: #ECE9E7;
+}
+
+
+.footer {
+    display : flex;
+    background-color : white;
+    /*justify-content : space-between;*/
+    align-items : center;
+    flex-wrap : wrap;
+    height : 70px;
 }
