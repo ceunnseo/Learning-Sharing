@@ -126,7 +126,8 @@ prevBtn.addEventListener("click", (e) => {
     if (current < 0) {
       current = cellSize-1;
     }
-    carousel.style.transform = `translateX(${(current) * -370}px)`;
+    /*carousel.style.transform = `translateX(${(current) * -370}px)`;*/
     console.log("prev 버튼 동작, current" + current);
   }
 )
+

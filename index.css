@@ -391,4 +391,9 @@ h3 {
     align-items : center;
     flex-wrap : wrap;
     height : 70px;
+    font-family : 'nanumSquareRoundB';
+}
+
+#footerImg {
+    padding-right : 10px;
 }
