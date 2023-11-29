@@ -23,15 +23,17 @@ body {
 /*helloMessage : 계속해서 성장~~ 입니다.*/
 .helloMessage {
     font-family : 'nanumSquareRoundB';
-    font-size: 24px;
-    width: 281px;
+    font-size: 30px;
+    /*width: 281px;*/
     height: 56px;
-    text-align: center;
+    text-align: left;
     margin : 0px;
-    padding-bottom :41px;
+    margin-bottom : 80px;
+    /*margin-bottom : calc(350px - 60px - 54px);*/
 }
 p {
-    margin : 0px; 
+    margin-top : 0px;
+    margin-bottom : 20px; 
 }
 
 .header {
@@ -52,6 +54,7 @@ p {
     left : 0;
     right : 0;
 }
+
 .menu {
     display : flex;
     justify-content : space-around;
@@ -76,8 +79,9 @@ p {
 }
 #home {
     display : flex;
-    flex-direction : column;
+    flex-direction : row;
     align-items: center;
+    justify-content: center;
 }
 #homeContainer {
     display : flex;
@@ -86,43 +90,33 @@ p {
     justify-content: center;
     padding-top : 2%;
 }
+.section1Container {
+    display : flex;
+    flex-direction : row;
+    align-items: flex-start;
+    justify-content : center;
+}
+#headerHome:hover {
+    color : #DE712E;
+}
+#headerAbout:hover {
+    color : #DE712E;
+}
+#headerKeywords:hover {
+    color : #DE712E;
+}
+#headerProject:hover {
+    color : #DE712E;
+}
+#headerContact:hover {
+    color : #DE712E;
+}
 
 
-
-.btn.orange {
-    background-color: #DE712E;
-}
-.btn.blue {
-    background-color: #88AFBA;;
-}
-.btn {
-    margin : 9px;
-    text-decoration: none;
-}
-.btn {
-    color: white; 
-    padding: 15px 25px;
-    display: inline-block;
-    border: 1px solid rgba(0,0,0,0.21);
-    border-bottom-color: rgba(0,0,0,0.34);
-    text-shadow:0 1px 0 rgba(0,0,0,0.15);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
-                0 2px 0 -1px rgba(0,0,0,0.13), 
-                0 3px 0 -1px rgba(0,0,0,0.08), 
-                0 3px 13px -1px rgba(0,0,0,0.21);
-}
-.btn:active {
-    top: 1px;
-    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
-    position: relative;
-}
-.rounded {
-    border-radius: 20px;
-}
 span.highlight {
     color : #3CA62B;
 }
+
 
 #introImage {
     width : 229px;
@@ -131,6 +125,24 @@ span.highlight {
     margin : 0 ;
     margin-right : 60px;
 }
+.intro2 {
+    display : flex;
+    flex-direction: column;
+    margin-right : 39px;
+    width : 380px;
+}
+
+/*home의 image*/
+.intro3 img {
+    /*width : 50vmin;
+    height : 50vmin;*/
+    width : 350px;
+    height : 350px;
+    padding-left : 35px;
+}
+
+
+
 
 /*section2 About 페이지*/
 
@@ -160,7 +172,7 @@ h2 {
     font-family : 'nanumSquareRoundB';
     font-size : 40px;
     text-align : center;
-    margin : 60px 0px;
+    margin : 50px 0px;
     padding-bottom : 0px;
 }
 h3 {
@@ -173,12 +185,12 @@ h3 {
     z-index : 0;
 }
 
-/*모달창 상세 내용*/
 
 #personality {
     top : 25%;
     left : 45%;
 }
+
 #education {
     top : 10%;
     left : 10%;
@@ -190,73 +202,31 @@ h3 {
 #motivation {
     top : 50%;
     left : 23%;
-
 }
 #likes {
     top : 40%;
     left : -15%;
 }
-
-.modal_body h2 {
-    /*color: red;*/
-    font-size : 30px;
-    margin : 10px;
-    font-family : 'nanumSquareRoundB';
+.words {
+    cursor : pointer;
 }
-.modal_body hr {
-    margin-top : 20px;
-    margin-bottom : 20px;
-    border : 0;
-    border-top : 1px solid #374144;
-    font-family : 'nanumSquare';
+#personality:hover {
+    color : #DE712E;
 }
-.modal_body h3 {
-    margin-top : 0px;
-    margin-bottom : 5px;
-    /*color: blue;*/
-    font-size : 25px;
-    font-family : 'nanumSquareRoundB';
-    padding-bottom : 30px;
+#education:hover {
+    color : #DE712E;
 }
-.modal_body p {
-    /*color: green;*/
-    font-size : 18px;
+#study:hover {
+    color : #DE712E;
+}
+#motivation:hover {
+    color : #DE712E;
+}
+#likes:hover {
+    color : #DE712E;
 }
 
-/*사진이랑 설명 들어있는 영역*/
-.modal_content { 
-    display : flex;
-    flex-direction : row;
-    justify-content : space-evenly;
-}
-/*설명만 들어있는 영역*/
-.modal_info {
-    display : flex;
-    flex-direction : column;
-}
-.modal_info .btn {
-    margin : 0px;
-    padding: 5px 15px;
-    font-size : 14px;
-    text-decoration: none;
-    color: white; 
-    display: inline-block;
-    border: 1px solid rgba(0,0,0,0.21);
-    text-shadow:0 1px 0 rgba(0,0,0,0.15);
-}
-
-
-
-
-
-
-
-
-#modalImage {
-    width : 20vw;
-    height : 30vh;
-}
-
+/************모달창 상세**************/
 /*모달창 검정 배경*/
 .modal {
     z-index :1;
@@ -277,44 +247,80 @@ h3 {
 .modal_body{
     position:absolute;
     top:50%;
-    /*
-    width:400px;  
-    height:600px; 
-    */
-    width:55vw;
-    height:55vh;
+    width:809px;
+    height:400px;
 
     padding:20px;  
-
     text-align: center;
-
     background-color: rgb(255,255,255); 
     border-radius: 31px;
     box-shadow:0 2px 3px 0 rgba(34,36,38,0.15); 
 
     transform:translateY(-50%);  
 }
+.modal_body h2 { /*모달창 큰 제목 (personalitt)*/
+    font-size : 30px;
+    margin : 10px;
+    font-family : 'nanumSquareRoundB';
+}
+.modal_body hr { /*모달창 제목과 내용의 구분선*/
+    margin-top : 20px;
+    margin-bottom : 20px;
+    border : 0;
+    border-top : 1px solid #374144;
+    font-family : 'nanumSquare';
+}
+.modal_body h3 { /*모달창 소제목*/
+    margin-top : 0px;
+    margin-bottom : 15px;
+    font-size : 25px;
+    font-family : 'nanumSquareRoundB';
+}
+.modal_body p { /*모달창 내용*/
+    font-size : 18px;
+}
 
+/*사진이랑 설명 전부 들어있는 영역*/
+.modal_content { 
+    display : flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+    align-items:  flex-start;
+}
+/*설명만 들어있는 영역*/
+.modal_info {
+    display : flex;
+    flex-direction : column;
+}
+/*모달창 안에 삽입되는 사진*/
+#modalImage {
+    width : 250px;
+    height : 250px;
+    object-fit : cover;
+    margin-right : 20px;
+}
 
 /**************** 3. project 페이지*******************/
+
 #project {
     display : flex;
     flex-direction : column;
     align-items : center;
 }
+
 /*캐러셀*/
 .carousel img {
     width : 370px;
     height : 370px;
-    /*border-radius : 20px;*/
+    object-fit: cover;
 }
 
 .carouselContainer {
-    /*margin-left : 100px;*/
     /*margin-top : 60px;*/
     width : 370px;
-    height : 450px;
+    height : 500px; /*450 -> 500*/
     overflow : hidden;
+
 }
 .carousel {
     display : flex;
@@ -326,8 +332,6 @@ h3 {
     width : 20px;
     height : 20px;
     border-radius : 50%;
-    /*정사각형의 절반 값으로 둥근 모서리 값 지정*/
-    /*margin-top : 20px;*/
     padding : 5px;
     border : 1px solid black;
     display : inline-block;
@@ -337,14 +341,33 @@ h3 {
     flex-direction : row;
     align-items : center;
 }
+
 .visit img {
     width : 30px;
     height : 30px;
+    margin-right: 5px;
 }
-.carousel .info {
+.visit a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'nanumSquare';
+    color: #474144;
+}
+.visit a:hover{
+    color : #DE712E;
+}
+.carousel .infoMess {
     text-align : center;
+    padding : 10px 0;
 }
-
+.visit {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
 
 /**************** 4. contact 페이지*******************/
 #contact {

@@ -10,18 +10,18 @@
 <body>
     <div class = "header">
         <div class = "home">
-            <div onclick = "location.href = '#home';">Choi Eunseo</div>
+            <div id = "headerHome" onclick = "location.href = '#home';">Choi Eunseo</div>
         </div>
         <div class = "menu">
-            <div onclick = "location.href = '#about';">About</div>
-            <div onclick = "location.href = '#keywords';">Keywords</div>
-            <div onclick = "location.href = '#project';">Project</div>
-            <div onclick = "location.href = '#contact';">Contact</div>
+            <div id = "headerAbout" onclick = "location.href = '#about';">About</div>
+            <div id = "headerKeywords" onclick = "location.href = '#keywords';">Keywords</div>
+            <div id = "headerProject" onclick = "location.href = '#project';">Project</div>
+            <div id = "headerContact" onclick = "location.href = '#contact';">Contact</div>
         </div>
 
     </div>
-    <div class = "section" id = "home">
-        <!--div class = "home_title" id = "homeMessage"></div-->
+    <!--div class = "section" id = "home">
+        <div class = "home_title" id = "homeMessage"></div>
         <h2 id = "homeMessage">console.log("hello, eunseo world!")</h2>
         <div id = "homeContainer">
             <img id = "introImage" src = "image/intro.jpg">
@@ -36,7 +36,29 @@
                 </div>
             </div>
         </div>
+    </div-->
+    <div class = "section" id = "home">
+        <div class = "section1Container">
+            <div class = "intro2">
+                <div class = "helloMessage">
+                    <p> 계속해서 <span class = "highlight">성장</span>해나가는 사람</p>
+                    <p> 🌱최은서🌱입니다</p>
+                    <!--p id = "homeMessage">console.log("welcome!")</p-->            
+                </div>
+                <hr>
+                <div>
+                    저는 결과에 연연하지 않고 도전하는 사람입니다.<p>
+                    열심히 도전하는 과정에서의 경험들이 저를 조금 더 멋진 사람으로 만들기 때문입니다.
+                    좋은 결과는 열심히 임하는 과정에서 자연스럽게 따라오는 선물이라 생각하기에 과정 자체에 집중하여 즐깁니다.
+                </div>
+            </div>
+
+            <div class = "intro3">
+                <img src="image/bomi1.jpg" alt="test1">
+            </div>
+        </div>
     </div>
+
     <div class = "section" id = "about">
         <h2 id = "aboutMe">🌻About Me🌻</h2>
         <div class = "info">
@@ -60,18 +82,19 @@
         <h3 class = "words" id = "personality">Personality</h3>
         <div class = "modal" id = "modal_personality">
             <div class = "modal_body">
-                <h2 id = "title">Personality</h2>
-                <hr>
+                <h2 id = "title">Personality</h2> <!--모달창 큰 제목-->
+                <hr> <!--구분선-->
                 <div class = "modal_content">
-                    <img id = "modalImage" src = "image/intro.jpg">
-                    <div class = "modal_info">
-                        <h3 id = "subtitle">나의 성격은!</h3>
+                    <img id = "modalImage" src = "image/intro.jpg"> <!--모달창 좌측 이미지-->
+                    <div class = "modal_info"> 
+                        <h3 id = "subtitle">나의 성격은!</h3> <!--모달창 소제목-->
+                        <!--모달창 내용-->
                         <p>저는 적극적인 성격입니다. 그리고 일을 많이 벌리는 성격입니다 ㅎㅎ
                             원래는 소극적인 사람이었는데 입시 준비를 오래 하고 학교 생활에서 이것저것 활동을 하다보니 적극적인 성격으로 변하게 되었습니다😊
                             제 장점이자 단점인 부분으로는 다른 사람을 많이 의식하는 편이라는 점입니다. 다른 사람들을 배려하는 모습은 장점으로 작용하지만
                             지나치게 의식했을 때 "내가 이상한가?" 혹은 "이런 말은 하면 안 됐나?" 등의 걱정으로 이어지는 것이 단점입니다.
                             그래서 "다른 사람들은 나한테 관심없어!" 라고 마음가짐을 달리 하면서 이러한 단점을 고쳐나가고 있습니다.
-                        </p>
+                        </p> 
                     </div>
                 </div>
             </div>
@@ -161,74 +184,58 @@
             <div class = "carouselContainer">
                 <div class = "carousel">
                     <div class = "cell">
-                        <img src="image/bomi1.jpg" alt="test1">
-                        <div class = "info">건국대학교 Learning-Shareing 활동에서 제작한 웹페이지입니다.</div>
+                        <img src="image/proj1.jpg" alt="test1">
+                        <div class = "infoMess">건국대학교 Learning-Shareing 활동에서 개인 프로젝트로 진행한 웹페이지입니다.</div>
                         <div class = "visit">
-                        <a href="https://github.com/ceunnseo">
+                        <a href="https://github.com/ceunnseo/Learning-Sharing" target="_blank">
                             <img src="image/github.png" alt="">
+                            깃허브
                         </a>
-                        <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
+                        <a href="https://autumn-flier-d18.notion.site/5c0953e03cf04b0790c6ae46eac948ec?pvs=4" target="_blank">
                             <img src="image/notion.png" alt="">
+                            노션
+                        </a>
+                        <a href="https://ceunnseo.github.io/Learning-Sharing/" target="_blank">
+                            <img src="image/webIcon.png" alt="">
+                            프로젝트
                         </a>
                         </div>
                     </div>
                     <div class = "cell">
-                        <img src="image/bomi2.jpg" alt="test2">
-                        <div>두번째 플젝 이름</div>
+                        <div>
+                            <img src="image/proj2.jpg" alt="test2">
+                        </div>
+                        <div class = "infoMess">건국대와 이노베이션아카데미에서 주관한 Project-x 부트캠프 팀프로젝트 결과물입니다.</div>
                         <div class = "visit">
-                            <a href="https://github.com/ceunnseo">
+                            <a href="https://github.com/ceunnseo/projectX-java" target="_blank">
                                 <img src="image/github.png" alt="">
+                                깃허브
                             </a>
-                            <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
+                            <a href="https://autumn-flier-d18.notion.site/Project-X-394360dab2e840fe96d12abbbb7bafd3?pvs=4" target="_blank">
                                 <img src="image/notion.png" alt="">
+                                노션
+                            </a>
+                            <a href="http://turtle-hwan.iptime.org/article/list" target="_blank">
+                                <img src="image/webIcon.png" alt="">
+                                프로젝트
                             </a>
                         </div>
                     </div>
                     <div class = "cell">
-                        <img src="image/bomi3.jpg" alt="test3">
-                        <div>세번째 플젝 이름</div>
+                        <img src="image/bomi3.jpg" alt="test2">
+                        <div class = "infoMess">준비중입니다 :)</div>
                         <div class = "visit">
-                            <a href="https://github.com/ceunnseo">
+                            <a target="_blank">
                                 <img src="image/github.png" alt="">
+                                깃허브
                             </a>
-                            <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
+                            <a target="_blank">
                                 <img src="image/notion.png" alt="">
+                                노션
                             </a>
-                        </div>
-                    </div>
-                    <div class = "cell">
-                        <img src="image/bomi4.jpg" alt="test3">
-                        <div>네번째 플젝 이름</div>
-                        <div class = "visit">
-                            <a href="https://github.com/ceunnseo">
-                                <img src="image/github.png" alt="">
-                            </a>
-                            <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
-                                <img src="image/notion.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class = "cell">
-                        <img src="image/bomi5.jpg" alt="test3">
-                        <div>다섯번째 플젝 이름</div>
-                        <div class = "visit">
-                            <a href="https://github.com/ceunnseo">
-                                <img src="image/github.png" alt="">
-                            </a>
-                            <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
-                                <img src="image/notion.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class = "cell">
-                        <img src="image/bomi6.jpg" alt="test3">
-                        <div>여섯번째 플젝 이름</div>
-                        <div class = "visit">
-                            <a href="https://github.com/ceunnseo">
-                                <img src="image/github.png" alt="">
-                            </a>
-                            <a href="https://autumn-flier-d18.notion.site/CHOI-EUNSEO-56041fffb8c84d62b1f1b2f91cd2114b?pvs=4">
-                                <img src="image/notion.png" alt="">
+                            <a target="_blank">
+                                <img src="image/webIcon.png" alt="">
+                                프로젝트
                             </a>
                         </div>
                     </div>
